@@ -2,7 +2,7 @@
 The Ultimate Hacking Emulator
 <hr />
 <h2>About HackerView</h2>
-  <p>
+
     Ever tried to impress someone ? Meet HackerView.
 
     HackerView is your one-stop hacking experience simulator.
@@ -12,5 +12,5 @@ The Ultimate Hacking Emulator
 
     HackerView is completely coded in Javafx 8, and requires you
     to have atleast java jre version 8.
-  </p>
+
     <h4>Note : This javafx app is based on the website http://www.hackertyper.com/.</h4>
