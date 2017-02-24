@@ -1,0 +1,7 @@
+#HackerBox .content{
+    -fx-background-color: black;
+}
+#HackerBox {
+    -fx-text-fill: green;
+    -fx-font-size: 15px;
+}
