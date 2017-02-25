@@ -2,8 +2,8 @@
 The Ultimate Hacking Emulator
 <hr />
 <h2>About HackerView</h2>
+<img src="https://image.ibb.co/fvrQwF/kackertype.png">
 Ever tried to impress someone ? Meet HackerView.
-
 HackerView is your one-stop hacking experience simulator.
 Make the person behind you believe in your hacking skills
 with HackerView. Type any key and see it translate into meaningfull C code. Press the Backspace key thrice, to get the Access granted response.
