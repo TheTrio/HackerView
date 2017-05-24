@@ -12,7 +12,9 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
-import javafx.util.Scanner;
+
+import java.io.File;
+import java.util.Scanner;
 
 import java.io.IOException;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -24,10 +26,10 @@ public class Main extends Application {
         TextArea textArea = new TextArea();
         textArea.setId("HackerBox");
         AtomicInteger i = new AtomicInteger(0);
-        String kernel = "";
-        Scanner s = new Scanner(getClass().getResource("kernel.txt").toExternalForm());
+        StringBuilder kernel = new StringBuilder("");
+        Scanner s = new Scanner(new File("kernel.txt"));
         while(s.hasNextLine()){
-            kernel = kernal + s.nextLine();
+            kernel.append(s.nextLine() + "\n");
         }
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Scene scene1 = new Scene(root, 348, 106);
@@ -37,6 +39,9 @@ public class Main extends Application {
         stage.initStyle(StageStyle.UNDECORATED);
         AtomicInteger count = new AtomicInteger(0);
         textArea.setOnKeyPressed(e->{
+            if(e.getCode()==KeyCode.ENTER)
+                e.consume();
+            System.out.println(e.getCode());
             if(e.getCode()==KeyCode.BACK_SPACE){
                 if(count.get()==3){
                     stage.show();
@@ -63,7 +68,7 @@ public class Main extends Application {
 
             }
         });
-        Scene scene = new Scene(textArea, 300,300);
+        Scene scene = new Scene(textArea, 1366,768);
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.setFullScreen(true);
