@@ -1,0 +1,43 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'HackerView.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedHackerView_id() {
+        dtjava.embed(
+            {
+                id : 'HackerView_id',
+                url : 'HackerView.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '1366',
+                height : '738'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedHackerView_id);
+</script>
+
+</head><body>
+<h2>Test page for <b>HackerView</b></h2>
+  <b>Webstart:</b> <a href='HackerView.jnlp' onclick="return launchApplication('HackerView.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

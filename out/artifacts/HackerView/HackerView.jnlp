@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="HackerView.jnlp">
+  <information>
+    <title>HackerView</title>
+    <vendor>TheTrio</vendor>
+    <description>The best hacking simulator in the market</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="HackerView.jar" size="10381" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="1366" height="738" main-class="sample.Main"  name="HackerView" />
+  <update check="background"/>
+</jnlp>

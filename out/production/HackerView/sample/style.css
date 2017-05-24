@@ -2,6 +2,6 @@
     -fx-background-color: black;
 }
 #HackerBox {
-    -fx-text-fill: green;
+    -fx-text-fill: #33FF33;
     -fx-font-size: 15px;
 }
