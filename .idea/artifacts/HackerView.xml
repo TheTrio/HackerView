@@ -4,15 +4,17 @@
     <properties id="javafx-properties">
       <options>
         <option name="appClass" value="sample.Main" />
-        <option name="description" value="" />
+        <option name="description" value="The best hacking simulator in the market" />
+        <option name="height" value="738" />
         <option name="htmlPlaceholderId" value="" />
         <option name="title" value="HackerView" />
         <option name="vendor" value="TheTrio" />
-        <option name="version" value="1.0.0" />
+        <option name="version" value="" />
+        <option name="width" value="1366" />
       </options>
     </properties>
     <root id="root">
-      <element id="archive" name="JavaFXApp.jar">
+      <element id="archive" name="HackerView.jar">
         <element id="module-output" name="HackerView" />
       </element>
     </root>
